@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <title>CSV2JSON</title>
+</head>
+<body>
+    <h1>
+        CSV2JSON
+    </h1>
+    <p>
+        Utilize o campo abaixo para anexar o arquivo CSV e depois clique em enviar.
+    </p>
+    <form method="POST" action="/convert"  enctype="multipart/form-data">
+        <div>
+            <label for="upload" class="custom-file-input">
+                Anexe aqui o arquivo CSV
+                <input type="file" id="upload" class="upload_input" name="upload_file" required />
+                <span id="filename"></span>
+            </label>            
+        </div>
+        <button class="btn btn-green btn-submit" type="submit">Enviar</button>
+    </form>
+</body>
+<script src="static/index.js"></script>
+</html>
